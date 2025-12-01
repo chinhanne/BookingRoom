@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /identity
+    context-path: /booking
 
 spring:
   datasource:
@@ -12,3 +12,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  ai:
+    openai:
+      api-key: ${GEMINI_KEY}
+      chat:
+        base-url: https://generativelanguage.googleapis.com
+        completions-path: /v1beta/openai/chat/completions
+        options:
+          model: gemini-2.0-flash
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  signerKey: ${JWT_KEY}
+  valid-duration: 3600
+  refreshable-duration: 36000
+
