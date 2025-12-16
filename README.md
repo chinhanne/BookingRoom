@@ -77,7 +77,7 @@ BookingRoom
 ├── service              # Business logic layer
 ├── validator            # Custom validators (e.g. DOB validation)
 └── util                 # Utility & helper classes
-
+```
 
 ## 🔗 Core APIs (Examples)
 
