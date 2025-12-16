@@ -61,20 +61,23 @@ It is designed to be secure, scalable, and maintainable.
 ---
 
 ## 📂 Project Structure
+
+```text
 BookingRoom
 │
-├── configuration # Redis, RabbitMQ, Rate Limit Configurations, JWT and OAuth2 Config
-├── constant # Defined Role
-├── controller # REST Controllers
-├── dto # Request / Response DTOs
-├── entity # Database Entities
-├── enums # Defined Status
-├── exception # Global Exception Handling
-├── mapper # Entity - DTO Mappers
-├── repository # JPA Repositories
-├── service # Business Logic
-├── validator # VaLid Dob
-└── util # Utility Classes
+├── configuration        # Redis, RabbitMQ, Rate Limit, JWT & OAuth2 configurations
+├── constant             # Application constants (Roles, permissions, etc.)
+├── controller           # REST Controllers (API endpoints)
+├── dto                  # Request / Response Data Transfer Objects
+├── entity               # Database Entities (JPA)
+├── enums                # Application enums (BookingStatus, PaymentStatus, etc.)
+├── exception            # Global exception handling & custom exceptions
+├── mapper               # Entity ↔ DTO mappers
+├── repository           # JPA repositories
+├── service              # Business logic layer
+├── validator            # Custom validators (e.g. DOB validation)
+└── util                 # Utility & helper classes
+
 
 ## 🔗 Core APIs (Examples)
 
